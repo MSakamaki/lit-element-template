@@ -1,0 +1,25 @@
+{
+  "name": "webcomp-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server",
+    "format": "npx prettier --write \"components/**/*.{ts,scss,css,json}\"",
+    "build": "rm -fr dist/sample && webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lit-element": "^2.2.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "prettier": "^1.18.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
+  }
+}
